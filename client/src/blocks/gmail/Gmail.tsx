@@ -78,3 +78,8 @@ export const Gmail: React.FC<EmailProps> = ({
     </GmailStyles>
   )
 }
+
+
+// ClientId:   794047250656-gptkedj181i6pviek854nhrqc2lrlm76.apps.googleusercontent.com
+
+//Client Secret: 1IZ8SvTpKOnvCxO0SA4eFUjX

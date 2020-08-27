@@ -22,7 +22,7 @@ router.get('/categories', (req, res) => {
 })
 
 router.get('/:cat/:key', (req, res) => {
-  const url = `http://newsapi.org/v2/top-headlines?country=${COUNTRYCODE}&category=${req.params.cat}&apiKey=${req.params.key}`
+  const url = `http://newsapi.org/v2/top-headlines?country=us&apiKey=da37863321d8485b9b412f174f8b3ce4`
 
   axios(url)
     .then((response) => {
@@ -34,7 +34,7 @@ router.get('/:cat/:key', (req, res) => {
 })
 
 router.get('/:key', (req, res) => {
-  const url = `http://newsapi.org/v2/top-headlines?country=${COUNTRYCODE}&apiKey=${req.params.key}`
+  const url = `http://newsapi.org/v2/top-headlines?country=us&apiKey=da37863321d8485b9b412f174f8b3ce4`
 
   axios(url)
     .then((response) => {
