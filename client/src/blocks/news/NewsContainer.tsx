@@ -28,8 +28,8 @@ const NewsContainer: React.FC = () => {
   const fetchNews = () => {
     setNewsLoading(true)
     const url = selectedCategory
-      ? `/api/news/${selectedCategory}/${c097bac411be047d669a4c25849ece89}`
-      : `/api/news/${c097bac411be047d669a4c25849ece89}`
+      ? `/api/news/${selectedCategory}/${API_KEY}`
+      : `/api/news/${API_KEY}`
 
     axios
       .get(url)
