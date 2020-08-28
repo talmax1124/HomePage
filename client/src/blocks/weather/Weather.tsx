@@ -37,13 +37,13 @@ export const Weather: React.FC<WeatherProps> = props => {
         <h3 className="info__desc">{capitalize(description)}</h3>
         <div className="info__temp">
           <p>
-            <strong>Temp</strong> {Math.round(temperature)}F
+            <strong>Temp</strong> {Math.round(temperature)}C
           </p>
           <p>
-            <strong>Max</strong> {Math.round(maxTemperature)}F
+            <strong>Max</strong> {Math.round(maxTemperature)}C
           </p>
           <p>
-            <strong>Min</strong> {Math.round(minTemperature)}F
+            <strong>Min</strong> {Math.round(minTemperature)}C
           </p>
         </div>
       </div>
