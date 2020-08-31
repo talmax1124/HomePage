@@ -60,11 +60,12 @@ const MoviesContainer: React.FC<MoviesContainerProps> = ({ tvShows }) => {
         setError('')
       })
       .catch(err => {
+        console.log(err.response)
         setError('There was an error fetching movies')
         setMoviesLoading(false)
       })
   }
-
+  
   const fetchGenres = () => {
     setLoading(true)
     const type = tvShows ? 'tv' : 'movie'
@@ -85,6 +86,7 @@ const MoviesContainer: React.FC<MoviesContainerProps> = ({ tvShows }) => {
         setError('')
       })
       .catch(err => {
+        console.log(err.response)
         setError('There was an error fetching genres')
         setLoading(false)
       })
